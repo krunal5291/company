@@ -41,7 +41,6 @@ function ColumnTotal(formId) {
         i++
     }
 
-
     let td1 = document.createElement("td")
     td1.innerHTML = t1
 
