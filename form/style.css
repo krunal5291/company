@@ -1,0 +1,57 @@
+body {
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg");
+}
+
+.singup {
+    margin-left: auto;
+}
+
+.singup h3 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.singup p {
+    font-weight: 600;
+    padding-bottom: 5px 0;
+}
+
+.singup form {
+    margin-top: 15px;
+    margin-left:  100px;    
+}
+
+
+.singup input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #74787d;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.singup form .btn {
+    color: white;
+    background-color: #524ae3;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.side {
+    background-color: rgb(46, 46, 53);
+    height: 100vh;
+}
+
+.side h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.side p {
+    font-size: 20px;
+}
+
+.w-50 {
+    width: 60%
+}

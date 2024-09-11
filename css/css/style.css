@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.test {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+div.test:hover {
+    overflow: visible;
+    transform: scaleY(1);
+    font-size: 64px;
+}
+
+div.test:hover div.test {
+    width: 2000px;
+}
+
+.box {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 100px;
+    margin: 50px;
+}
+
+.box:hover {
+    transform: rotatex(180deg);
+    transition: all 2s;
+}
+
+
+
+body {
+    background-color: #2B373D;
+}
+
+.icon-box {
+    height: 100px;
+    width: 100px;
+
+    background-color: #445760;
+    margin: 100px auto;
+    border-radius: 100%;
+    color: #2B373D;
+    font-size: 40px;
+    text-align: center;
+    transition: all 2s;
+}
+
+.icon-box i {
+    line-height: 100px;
+
+}
+
+.icon-box:hover {
+    box-shadow: 0px 0px 30px orange;
+    text-shadow: 0px 0px 30px orange;
+    color: yellow;
+    z-index: 1;
+    transform: rotate(360deg) scale(1.2);
+}
+   
+.btn,
+.btn1 {
+    height: 100px;
+    width: 200px;
+    display: block;
+    background-color: #445760;
+    position: relative;
+    margin: 100px auto;
+    border-radius: 10px;
+    font-size: 40px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    transition: all 2s;
+    border: 1px solid black;
+}
+
+.btn::after {
+    background-color: yellow;
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    transition: all 2s;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 2s all;
+    margin: auto;
+}
+
+.btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.btn1::after {
+    background-color: yellow;
+    content: "";
+    width: 0%;
+    height: -100%;
+    position: absolute;
+    transition: all 2s;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: 2s all;
+    margin: auto;
+    line-height: 100%;
+}
+
+.btn1:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 20px orange;
+}

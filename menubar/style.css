@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.item-center{
+    align-items: center;
+}
+font{
+    font-size: 16px;
+}
+
+.text-center{
+    text-align: center;
+}
+.w-20{
+    width: 20%;
+    padding: 15px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-item{
+    align-items: stretch;
+}
+
+
+header{
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+header nav ul a{
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+header nav ul li:hover a{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.454);
+}
+
+header .dropdown{
+    position: absolute;
+    top: 100px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all.3s;
+}
+
+header .dropdown li a{
+    display: inline-block;
+    padding: 8px 20px;
+    font-weight: 600;
+}
+
+header nav li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    top: 55px;
+}
+
+
+header .dropdown .submenu{
+    position: absolute;
+    top: 45px;
+    left: 90%;
+    width: 190px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+header .submenu li a{
+    padding: 10px;
+    font-weight: 600;
+}
+
+header .dropdown li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    left: 100%;
+}
+
