@@ -10,41 +10,31 @@
 <body>
     <table border="20px">
         <thead>
-            <tr >
+            <tr>
                 <td>num1</td>
                 <td>num2</td>
                 <td>num3</td>
-                <td>submit</td>
                 <td>total</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <form id="form1">
-                    <td><input type="number" id="num1-form1"></td>
-                    <td><input type="number" id="num2-form1"></td>
-                    <td><input type="number" id="num3-form1"></td>
-                    <td><input type="submit" value="total"></td>
-                    <td id="total1"></td>
-                </form>
+                <td><input type="number" onkeyup="Total('form1', 'total1') ,ColumnTotal()" id="num1-form1"></td>
+                <td><input type="number" onkeyup="Total('form1', 'total1'),ColumnTotal()" id="num2-form1"></td>
+                <td><input type="number" onkeyup="Total('form1', 'total1'),ColumnTotal()" id="num3-form1"></td>
+                <td id="total1"></td>
             </tr>
             <tr>
-                <form id="form2">
-                    <td><input type="number" id="num1-form2"></td>
-                    <td><input type="number" id="num2-form2"></td>
-                    <td><input type="number" id="num3-form2"></td>
-                    <td><input type="submit" value="total"></td>
+                    <td><input type="number" onkeyup="Total('form2', 'total2'),ColumnTotal()" id="num1-form2"></td>
+                    <td><input type="number" onkeyup="Total('form2', 'total2'),ColumnTotal()" id="num2-form2"></td>
+                    <td><input type="number" onkeyup="Total('form2', 'total2'),ColumnTotal()" id="num3-form2"></td>
                     <td id="total2"></td>
-                </form>
             </tr>
             <tr>
-                <form id="form3">
-                    <td><input type="number" id="num1-form3"></td>
-                    <td><input type="number" id="num2-form3"></td>
-                    <td><input type="number" id="num3-form3"></td>
-                    <td><input type="submit" value="total"></td>
+                    <td><input type="number" onkeyup="Total('form3', 'total3'),ColumnTotal()" id="num1-form3"></td>
+                    <td><input type="number" onkeyup="Total('form3', 'total3'),ColumnTotal()" id="num2-form3"></td>
+                    <td><input type="number" onkeyup="Total('form3', 'total3'),ColumnTotal()" id="num3-form3"></td>
                     <td id="total3"></td>
-                </form>
             </tr>
         <tfoot id="cl1"></tfoot>
     </table>
