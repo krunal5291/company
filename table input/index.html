@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table</title>
 </head>
 
 <body>
@@ -17,28 +17,38 @@
                 <td>total</td>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tbody">
+                <tr>
+                    <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num1-form1"></td>
+                    <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num2-form1"></td>
+                    <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num3-form1"></td>
+                    <td class="total"></td>
+                </tr>
             <tr>
-                <td><input type="number" onkeyup="Total('form1', 'total1') ,ColumnTotal()" id="num1-form1"></td>
-                <td><input type="number" onkeyup="Total('form1', 'total1'),ColumnTotal()" id="num2-form1"></td>
-                <td><input type="number" onkeyup="Total('form1', 'total1'),ColumnTotal()" id="num3-form1"></td>
-                <td id="total1"></td>
+                <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num1-form2"></td>
+                <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num2-form2"></td>
+                <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num3-form2"></td>
+                <td class="total"></td>
             </tr>
             <tr>
-                    <td><input type="number" onkeyup="Total('form2', 'total2'),ColumnTotal()" id="num1-form2"></td>
-                    <td><input type="number" onkeyup="Total('form2', 'total2'),ColumnTotal()" id="num2-form2"></td>
-                    <td><input type="number" onkeyup="Total('form2', 'total2'),ColumnTotal()" id="num3-form2"></td>
-                    <td id="total2"></td>
+                <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num1-form3"></td>
+                <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num2-form3"></td>
+                <td><input type="number" onkeyup="Total(this), ColumnTotal()" id="num3-form3"></td>
+                <td class="total"></td>
             </tr>
+        </tbody>
+        <tfoot>
             <tr>
-                    <td><input type="number" onkeyup="Total('form3', 'total3'),ColumnTotal()" id="num1-form3"></td>
-                    <td><input type="number" onkeyup="Total('form3', 'total3'),ColumnTotal()" id="num2-form3"></td>
-                    <td><input type="number" onkeyup="Total('form3', 'total3'),ColumnTotal()" id="num3-form3"></td>
-                    <td id="total3"></td>
+                <td id="col-total1"></td>
+                <td id="col-total2"></td>
+                <td id="col-total3"></td>
+                <td id="grand-total"></td>
             </tr>
-        <tfoot id="cl1"></tfoot>
+        </tfoot>
     </table>
+
     <script src="index.js"></script>
+
 </body>
 
 </html>
